@@ -35,7 +35,7 @@ a:active {
 html, body { height:100%; }
 
 /* ======================================================
-   Header
+   Website Menu + Home
    ====================================================== */
 
 Body {
@@ -45,7 +45,6 @@ Body {
 .layout {
 	width: 96%;
 	margin: 30px auto 30px auto;
-  overflow: hidden;
 }
 
 header {
@@ -54,7 +53,6 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 10px;
-	z-index:10;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -63,7 +61,7 @@ header {
   float: left;
   font-size: 48px;
   font-weight: 700px;
-  padding: 10px 30px 0 75px;
+  padding: 10px 30px 0 90px;
 }
 
 a {
@@ -96,48 +94,45 @@ a:hover {
 to the size of the container element 
 (usually a div): */
 
-/* ======================================================
-   Home
-   ====================================================== */
-
-.home {
-  margin: 9.33% auto auto 5%;
+.page {
+  margin: 9.33% auto auto 2%;
 }
 
-.row-1 {
-float: left;
-  height: 5em;
+.column-1 {
+  float: left;
 }
 
 .personal-1 {
-	margin-left: 5%;
+	margin-left: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.column-2 {
+  width: 65.33%;
+  float: right;
 }
 
 .book {
-  margin-left: 30%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row-1 {
+  float: right;
+  width: 65.33%;
 }
 
 .museum {
-	margin-left: 80%;
+  margin-left: 11.33%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.row-2 {
-  float: right;
-  width: 71.9%;
-  padding-bottom: 6.666%;
-}
-
 .photo {
-	margin-top: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .montage {
-  margin-top: 10%;
-  margin-left: 52%;
+  margin-top: 13%;
+  margin-left: 15%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -145,194 +140,11 @@ float: left;
   float: left;
 }
 
-/* ======================================================
-   About
-   ====================================================== */
-.about {
-  margin-top: 9.33%;
-  overflow: hidden;
-}
-.column-1 {
-  float: left;
-  background-color: white;
-  width: 40%;
-  height: 42em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  text-align: center;
-  font-size: 60pt;
-  font-weight: 300;
-  padding-top: 30%;
-}
-
-h2 {
-  text-align: center;
-  padding-top: 5%;
-  font-weight: 300;
-}
-
-.column-2 {
-  float: right;
-  text-align: center;
-  background-color: white;
-  width: 55%;
-	height: 42em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-h3 {
-  padding-top: 30%;
-  font-weight: 300;
-}
-
-/* ======================================================
-   Portfolio Overview
-   ====================================================== */
-
-.row-3 {
-	float: left;
-  background-color: white;
-  margin: 2% 0 2% 0;
-  width: 100%;
-  height: 20em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-h4 {
-  font-size: 60pt;
-  font-weight: 300;
-  padding: 7% 0 0 2.66%;
-}
-
-.pic-container {
-  float: left;
-  margin: 0 0 2% 2%;
-  background-color: white;
-  width: 30%;
-	height: 20em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-
-/* all styles apply to a link ("a" tag) */
-.mouse-over {
-	display: block;
-	position: relative;
-}
-/* the dark overlay: */
-.mouse-over span {
-	position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: hsla(0,0%,0%,0.6);
-	opacity: 0;
-  transition: all 0.5s ease;
-}
-/* the "title" text: */
-.mouse-over span h5 {
-	position: absolute;
-  color: white;
-  margin: auto;
-	z-index: 2;
-	font-size: 2em; 
-}
-/* visibility on hover: */
-.mouse-over:hover span {
-	opacity: 1;
-}
-/* image default: */
-.mouse-over img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: all 0.5s ease;
-}
-/* image scale on hover: */
-.mouse-over:hover img {
-  transform: scale(1.05);
-}
-
-/* ======================================================
-   Photography
-   ====================================================== */
-
-.row-4 {
-	float: left;
-	margin: 0 0 0 3.33%;
-	padding-bottom: 3%;
-}
-
-h6 {
-	font-size: 12pt;
-	line-height: 18pt;
-}
-
-h7 {
-	font-size: 12pt;
-	line-height: 60pt;
-	font-style: italic;
-}
-
-.row-4 img {
-	margin: 2% 3% 0 0;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.divider {
-	border-bottom: 1px solid grey;
-}
-
-.row-5 {
-	float: left;
-	margin: 0 0 0 3.33%;
-	padding-bottom: 3%;
-}
-
-.row-5 img {
-	margin: 2% 1.66% 0 0;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.row-6 {
-	float: left;
-	margin: 0 0 0 3.33%;
-}
-
-.row-6 span {
-	font-weight: 300;
-}
-
-.row-6 img {
-	margin: 2% 1.66% 0 0;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.row-7 {
-	float: left;
-	margin: 0 65% 5% 3.33%;
-}
-
-.row-7 img {
-	margin: 2% 1.66% 0 0;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-/* ======================================================
-   Footer
-   ====================================================== */
-
 footer {
   position: fixed;
   bottom:0;
    width:100%;
-  height: 4em;
+  height: 60px;
   padding: 30px 0 0 90px;
    background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
