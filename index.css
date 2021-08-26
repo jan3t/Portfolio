@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+  .clear { clear: both; }
+  
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+/* ======================================================
+   Website Menu + Home
+   ====================================================== */
+
+Body {
+	font-family: 'BrownPro', sans-serif;
+  background-color: #E5E5E5;
+}
+.layout {
+	width: 96%;
+	margin: 30px auto 30px auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.site-title {
+  float: left;
+  font-size: 48px;
+  font-weight: 700px;
+  padding: 10px 30px 0 90px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+   color: grey; 
+}
+
+.nav {
+  float: right;
+  padding: 30px 90px 0 0;
+}
+li{
+  float: left;
+  margin-left: 30px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+a:hover {
+   color: grey; 
+}
+/* All images scale proportionally 
+to the size of the container element 
+(usually a div): */
+
+.page {
+  margin: 9.33% auto auto 2%;
+}
+
+.column-1 {
+  float: left;
+}
+
+.personal-1 {
+	margin-left: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.column-2 {
+  width: 65.33%;
+  float: right;
+}
+
+.book {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row-1 {
+  float: right;
+  width: 65.33%;
+}
+
+.museum {
+  margin-left: 11.33%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.photo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.montage {
+  margin-top: 13%;
+  margin-left: 15%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image-box-1 {
+  float: left;
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+   width:100%;
+  height: 60px;
+  padding: 30px 0 0 90px;
+   background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
